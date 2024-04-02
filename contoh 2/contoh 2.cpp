@@ -13,8 +13,13 @@ struct Mahasiswa {
     int umur;
 };
 
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    Mahasiswa mhs;
+    cout << : "Nomer Mahasiswa : ";
+    
+
+    
 }
 
