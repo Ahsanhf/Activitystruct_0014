@@ -5,6 +5,7 @@ struct Mahasiswa {
     int nim;
     int nama;
     int alamat;
+    int umur;
 };
 
 
