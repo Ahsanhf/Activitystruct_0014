@@ -2,15 +2,14 @@
 using namespace std;
 
 struct Mahasiswa {
-    int nim;
-    int nama;
-    int alamat;
+    string nim;
+    string nama;
+    string alamat;
     int umur;
 };
 
 
-int main()
-{
+int main() {
     Mahasiswa mhs;
     cout << "Nomor Mahasiswa : ";
     cin >> mhs.nim;
@@ -18,14 +17,14 @@ int main()
     cin >> mhs.nama;
     cout << "Alamat Mahasiswa : ";
     cin >> mhs.alamat;
-    cout << "Umur Mahasiswa ; ";
+    cout << "Umur Mahasiswa : ";
     cin >> mhs.umur;
 
     cout << endl;
-    cout << "\n NIM : " << mhs.nim;
-    cout << "\n Nama : " << mhs.nama;
-    cout << "\n Alamat : " << mhs.alamat;
-    cout << "\n Umur : " << mhs.umur;
+    cout << "\n NIM : "<< mhs.nim;
+    cout << "\n Nama : "<< mhs.nama;
+    cout << "\n Alamat : "<< mhs.alamat;
+    cout << "\n Umur : "<< mhs.umur;
 
 
 }
