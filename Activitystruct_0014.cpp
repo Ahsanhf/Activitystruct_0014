@@ -1,5 +1,10 @@
-
 #include <iostream>
+using namespace std;
+
+struct Mahasiswa {
+    int nim;
+};
+
 
 int main()
 {
