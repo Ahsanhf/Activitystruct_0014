@@ -2,7 +2,7 @@
 using namespace std;
 
 struct DetailAlamat {
-    string alamat;
+    string desa;
     string kota;
 };
 
@@ -22,7 +22,7 @@ int main()
     cout << "Nama Mahasiswa : ";
     cin >> mhs.nama;
 
-    cout << "Alamat Mahasiswa : ";
+    cout << "Alamat Mahasiswa : " << endl;
     cout << "\t Nama Desa : ";
     cin >> mhs.alamat.desa;
     cout << "\t Nama kota : ";
@@ -32,12 +32,12 @@ int main()
     cin >> mhs.umur;
 
     cout << endl;
-    cout << "\n NIM : " << mhs.nim;
+    cout <<"\n NIM : "<<mhs.nim;
     cout << "\n Nama : " << mhs.nama;
     cout << "\n Alamat : ";
     cout << "\n \t Desa : " << mhs.alamat.desa;
     cout << "\n \t Kota : " << mhs.alamat.kota;
-    cout << "\n \t Umur : " << mhs.umur;
+    cout << "\n Umur : " << mhs.umur;
 
 }
 
