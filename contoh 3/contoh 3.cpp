@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
  
@@ -8,31 +7,38 @@ struct DetailAlamat {
     string kota;
 };
 
+
 struct Mahasiswa {
     string nim;
-    char nama[25];
+    string nama;
     DetailAlamat alamat;
     int umur;
-};  
+};
 
 
-int main()
-{
+
+int main() {
     Mahasiswa mhs;
     cout << "Nomor Mahasiswa : ";
-    cin >> mhs.nim;
+    getline(cin, mhs.nim);
     cout << "Nama Mahasiswa : ";
-    cin >> mhs.nama;
-    cin.getline(mhs.nama, 25);
-    cin.ignore(1, \n');
+    getline(cin, mhs.nama);
 
-    cout << "Alamat Mahasiswa :  " << endl;
+    cout << "Alamat Mahasiswa : " << endl;
     cout << "\t Nama Desa : ";
     cin >> mhs.alamat.desa;
-    cin.ignore(1, '\n');
     cout << "\t Nama Kota : ";
     cin >> mhs.alamat.kota;
-    cin.ignore(1, '\n');
-    cout << "umur mahasiswa : ";
+
+    cout << "Umur Mahasiswa : ";
     cin >> mhs.umur;
 
+    cout << endl;
+    cout << "\n NIM :" << mhs.nim;
+    cout << "\n Nama :" << mhs.nama;
+    cout << "\n Alamat :";
+    cout << "\n \t Desa :" << mhs.alamat.desa;
+    cout << "\n \t Kota :" << mhs.alamat.kota;
+    cout << "\n Umur :" << mhs.umur;
+
+}
